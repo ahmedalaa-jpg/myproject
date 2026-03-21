@@ -2,9 +2,15 @@
 <html>
     <head>
         <title>دورة html</title>
+        <style>
+            table,th,td{
+                border: 1px solid black;
+            }
+        </style>
     </head>
     <body dir="rtl">
         <h1>دورة html</h1><!-- title -->
+        <img src ="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML Logo" width="200" height="200"> <!-- image -->
         <h2>وصف الدورة</h2><!--subtitle-->
         <p><!-- description -->
             في هذه الدورة سنتعلم أساسيات لغة <b>Html</b>، وكيفية بناء صفحات الويب باستخدامها، بالإضافة إلى بعض التقنيات المتقدمة التي تساعدك في تحسين تصميم صفحاتك وجعلها أكثر تفاعلية.
@@ -19,7 +25,77 @@
         <p><b>المستوىات لهذا الدورة:</b> <br>
             1<sup>st</sup>-level :اساسيات<br>
             2<sup>nd</sup>-level :متقدم  
+        </p><hr>
+        <h2>اهداف هذة الدورة</h2>
+        <ol type="1">
+           <li>محاضرة 1: مقدمة في HTML</li>
+           <li>محاضرة 2: العناصر الأساسية في HTML</li>
+           <li>محاضرة 3: التنسيق والتصميم باستخدام CSS</li>
+        </ol>
+        <h2>متطلبات هذه الدورة</h2>
+        <ul>
+            <li>متصفح ويب</li>
+            <li>محرر نصوص</li>
+        </ul>
+        <p>للمراجع قم باضغط 
+            <a href="https://dev.w3.org/html5/spec-LC/">هنا</a>
         </p>
+        <video width="500" height="300" controls>
+            <source src="https://www.w3.org/html/movies/big-buck-bunny_trailer.webm" type="video/webm">
+            متصفحك لا يدعم عرض الفيديو
+        </video>
+        <audio controls>
+            <source src="https://www.w3.org/html/movies/big-buck-bunny_trailer.webm" type="audio/webm">
+            متصفحك لا يدعم عرض الصوت
+        </audio>
+        <table>
+            <caption>جدول مواعيد المحاضرات</caption>
+            <tr>
+              <th>يوم</th>
+              <th>المكان</th>
+            </tr>
+            <tr>
+              <td>الاحد والاثنين</td>
+              <td>class A</td>
+            </tr>
+            
+           <tr>
+               <Td>الثلاثاء والاربعاء</Td>
+                <td>class B</td>
+           </tr>
+            <tr>
+             <td colspan="2"> الخميس  
+               عن بعد</td> 
+            </tr>
+        </table>
+        <hr>
+        <h2>نموذج الانضمام للدورة</h2>
+        <form>
+            <labal for="name"> اسم المستخدم</labal>
+            <input type="text" id="name">
+            <p>الجنس:</p>
+            <input type="radio" id="male" name="gender">
+            <label for="male">ذكر</label>
+            <input type="radio" id="famale" name="gender">
+            <label for="famale">انثى</label>
 
+            <p>من اين سمعت عن html؟</p>
+            <input type="checkbox" id="social" name="social">
+            <label for="social">وسائل التواصل الاجتماعي</label> <br>
+            <input type="checkbox" id="friend" name="friend">
+            <label for="friend">صديق</label> <br>   
+             <input type="checkbox" id="books" name="books">
+             <label for="books">كتب</label><br>
+             <input type="checkbox" id="other" name="other"> 
+             <label for="other">اخرى</label><br>
+            
+             <label for="city">اختر مدينتك:</label>
+                <select id="city" name="city">
+                    <option value="cairo">القاهرة</option>
+                    <option value="alexandria">الاسكندرية</option>
+                    <option value="damanhour">المنصورة</option>
+                </select><br>
+                <input type="submit" value="انضم الان">
+        </form>
     </body>
 </html>
