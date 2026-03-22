@@ -1,15 +1,50 @@
 body{
-    background-color: white;
+    background-image: url("Screenshot\ 2026-03-14\ 004512.png");
 }
 h1{
     text-align: center;
-    color: darkblue;
+    color: white;
+    position:inherit;
+    padding: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}    
+div{
+    color:#fff;
+    padding: 15px;
+    margin: 0px;
 }
- div{
-    background-color: aqua;
-    width: 50%;
-    height: 50%;
-    border: 15px solid blue;
-    padding: 50px;
-    margin: 20px;
-} 
+#name{
+    background-color:white;
+}
+label{
+    color: #fff;  
+}
+.submit{
+    background:fixed;
+    position: fixed;
+    color: #fff;
+    border-radius: 15px;
+}
+nav{
+     background-color:#333;
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+lu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li{
+    margin: 0;
+}
+a{
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+}
+a:hover{
+    background-color: #555;
+}
